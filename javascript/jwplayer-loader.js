@@ -11,17 +11,7 @@ $(document).ready(function() {
 	var c = $('div.jwplayer');
 	$.each(c, function(i, v) {
 		var id = $(v).attr('id');
-		
-		
-		console.log(v);
 		cfg = $.extend($(v).data(), jwpDefault);
-		console.log(cfg);
 		jwplayer(id).setup(cfg);
-		
-		
-		
 	});
-	
-	
-	
 });

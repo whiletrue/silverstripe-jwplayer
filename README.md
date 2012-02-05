@@ -9,6 +9,7 @@ Silvan Zurbruegg <silvan@etoy.com>
 ## Requirements
 -----------------------------------------------
 SilverStripe 2.4
+
 JQuery 
 
 ## License
@@ -17,6 +18,8 @@ For non-commercial use only, see http://www.longtailvideo.com/.
 Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 
 ## Installation Instructions
+
+Copy plugin dir to BASE_PATH/JWPlayer 
 
 Include nescessary javascript files from the page controller:
 
