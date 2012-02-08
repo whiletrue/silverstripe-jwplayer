@@ -4,8 +4,10 @@ $(document).ready(function() {
 	}
 	
 	var basePath = $('base').attr('href');
+	var jwPath = basePath+"JWPlayer/thirdparty/jwplayer";
+	
 	var cfg={}, jwpDefault = {
-		flashplayer:basePath + "JWPlayer/thirdparty/jwplayer/player.swf"
+		flashplayer:jwPath+"/player.swf",
 	};
 	
 	var c = $('div.jwplayer');

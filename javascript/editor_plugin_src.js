@@ -13,7 +13,7 @@
 			// Register buttons
 			ed.addButton('jwplayersc', {
 				title : 'Insert Mediaplayer Shortcode',
-				image : '/JWPlayer/images/jwplayer.png',
+				image : 'JWPlayer/images/jwplayer.png',
 				cmd : 'jwplayerscInsertShortcode'
 			});
 			
