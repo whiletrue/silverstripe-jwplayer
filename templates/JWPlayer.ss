@@ -2,4 +2,4 @@
     <% control jwData %>
         data-$name="$value"
     <% end_control %>
->loading ...</div>
+> </div>

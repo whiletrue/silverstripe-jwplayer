@@ -4,13 +4,13 @@ class JWPlayerUtil {
     protected static $_opt = array(
         'video' => array(
             'controlbar' => 'over',
-            'icons'	=> false,
-            'skin'	=> ''
+            'icons'	=> 'true',
+            'skin'	=> '',
+            'controlbar.idlehide' => 'true'
         ),
         'audio' => array(
             'controlbar' => 'bottom',
-            'width' => 300,
-            'height' => 24
+            'icons' => 'false',
         )
     );
     
@@ -31,12 +31,17 @@ class JWPlayerUtil {
 		    return;
 		}
 	    
-		$type = (empty($arg['type'])) ? 'movie' : $arg['type'];
+		$type = 'movie';
+		if (!empty($arg['type'])) {
+		    $type = $arg['type'];
+		    unset($arg['type']);
+		}
+		
 		$movieUrl = BASE_URL.'/assets/Uploads/'.$arg['file'];
 		$movieId = uniqid('jwp_');
 		
 		$data = self::$_opt['video'] + array(
-		    'file' => $movieUrl,
+		    'file' => urldecode($movieUrl),
 		);
 		
 		if ('audio' === $type) {
